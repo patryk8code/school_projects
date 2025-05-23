@@ -1,0 +1,51 @@
+html,
+body {
+    background-color: #343009;
+    color: #F7E7D4;
+    margin: 0 !important;
+    width: 100%;
+    min-height: 80%;
+}
+a{
+    text-decoration: none;
+}
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 30;
+    position: sticky;
+    text-decoration: none;
+    color:white;
+    
+}
+.title:hover{
+    color: rgb(104, 238, 238);
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 10px;
+}
+
+.carimg{
+    width:auto;
+    height:300px;
+}
+#info{
+    text-align: center;
+    font-size:1.8em;
+}
+footer{
+    width: 100%;
+    background-color: rgb(150, 64, 255);
+    color: white;
+    text-align: center;
+    font-size:1.5em;
+}
