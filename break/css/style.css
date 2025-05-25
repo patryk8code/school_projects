@@ -1,0 +1,255 @@
+:root {
+    --titl: 50px;
+    /* height of header*/
+}
+
+body {
+    margin: 0 !important;
+    color: #fff;
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+}
+#save{
+    padding-right: 10px;
+    cursor:pointer;
+    color:green;
+    font-size:1.4em;
+
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 20px;
+    width: auto;
+    background-color: #333;
+    height: var(--titl);
+}
+#logout{
+    font-size:1.4em;
+    color:green;
+}
+nav {
+    background-color: #919;
+    border: 10px dotted red;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+    background-color: #131;
+}
+
+#buying {
+    width: 25%;
+    overflow: auto;
+    direction: rtl;
+
+}
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #750000 #EBCF3B;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: black;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: white;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: green;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: white;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: blue;
+}
+ 
+.buy {
+    margin-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor:pointer;
+    border: 1px dashed lightgreen;
+}
+
+#buyImg {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+#buyImg>img{
+    width: 100%;
+    height:auto;
+    max-height:100px;
+    max-width:auto;
+    object-fit:contain;
+}
+
+#buy-item {
+    width: calc(100% - 50px);
+    height: 125px;
+    min-width: 150px;
+}
+
+#buyR {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+}
+
+#buyR>div>p {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* add this in future 
+#active{
+
+}
+#empty{
+
+}
+/*-------------------------------------------------*/
+#center {
+    width: 55%;
+}
+
+#cent-h {
+    margin-top: 7px;
+    height: 5%;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+#cent-h>p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+#icon>img {
+    width: 200px;
+    transition: all 0.1s;
+}
+
+#cent-c {
+    position: relative;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+#cent-c>#icon {
+    width: max-content;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+#upgrades {
+    width: 20%;
+}
+
+#upgrades>div {
+    border-bottom: 3px double red;
+    border-left: 3px dashed blue;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+footer {
+    height: 20px;
+    padding: 1px;
+    border: 1px solid red;
+    text-align: center;
+
+}
+footer>p{
+    margin:0;
+    padding:0;
+}
+
+img.coin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 35px;
+    height: 35px;
+    animation: disapear 1s ease-out;
+}
+
+@keyframes disapear {
+    0% {
+        opacity: 1;
+        transform: translate(0px, -20px);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: translate(0px, -200px);
+    }
+}
+
+div.clickEffect {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    animation: clickEffect 0.05s ease-out;
+    z-index: 10;
+}
+
+@keyframes clickEffect {
+    0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+
+    100% {
+        opacity: 0.2;
+        width: 15em;
+        height: 15em;
+        margin: -7.5em;
+        border-width: 0.03em;
+    }
+}
