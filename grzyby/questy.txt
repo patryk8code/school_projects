@@ -1,0 +1,43 @@
+1. title
+2. content
+3. num of butt
+4. butt. . . .
+5. time mission
+6. mission expire
+7.Effects 
+
+make function f(exp=1,gold=1) //add 1 gold and exp
+?? dzielnica portowa ??
+1. Datek dla biednych 
+2. Stara kobieta od której czuć piwem podeszła i zapytała cię czy nie dałbyś jej 5 srebrnych monet
+3. ["Daj 5", "Daj 10", " Daj 0", "Pomiń"] 
+4.1h
+5.1D
+6.Effects ["+5 exp -5 gold f(exp=5, gold=-5)","+15 exp -10gold +upgrade","przeklina cię -10 helth","skip f(0)"]
+
+1. Lek dla chorej matki 
+2. podchodzi do ciebie bogato ubrany chłopiec i mówi "Proszę, daj mi 15 srebrnych monet brakuje mi na lek dla mojej umierającej mamy"
+3. ["daj 15","daj 20","daj 0","nazwij go bogatym kłamcą"]
+4.1h
+5.1D
+6.["-15 monet chłopiec wydaje na twoich oczach pieniądze na chałwę","-20 monet chłopiec wydaje pieniądze na chałwę i nazywa cie starym głupcem","chłopiec nazywa cie głupcem +1exp","chłopiec nazywa cię starym capem i ucieka +5 exp "]
+
+1. Biedna dziewczynka z zapałkami
+2.Widzisz w rynsztoku małą ubrudzoną dziewczynkę w podartych ubraniach, patrzy na ciebie smutnymi oczami
+3.["daj 5 monet","Kup jej ciastko za 3 monety","powiedz że jest śliczna","Przejdź obojętnie"]
+4.3H
+5.1D
+6.["dziewczynka nie wierzy włąsnym oczom, po chwili z domu obok wychodzi starzec i odbiera jej pieniądze, każe ci stąd odejść","Dziewczynka łąpczywie pochłania ciastko, oddaje ci w zamian mapę rynsztoków","skip"]
+
+1.
+2.
+3.
+4.
+5.
+6.
+1.
+2.
+3.
+4.
+5.
+6.

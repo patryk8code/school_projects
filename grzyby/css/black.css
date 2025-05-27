@@ -1,0 +1,57 @@
+body {
+  margin: 0 !important;
+  background-color: black;
+  color: white;
+}
+
+header {
+  height: auto;
+  padding: 5px;
+  background-color: salmon;
+  text-align: center;
+}
+
+header>h1 {
+  text-align: center;
+  margin: 0;
+}
+
+article {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: green;
+}
+
+nav>div {
+  margin: 0 5px;
+  font-size: 1.3em;
+}
+
+nav>div>a {
+  color: aqua;
+  text-decoration: none;
+}
+
+nav>div>a:hover {
+  color: red;
+}
+
+main {
+  background-color: orange;
+}
+h2{
+  text-align: center;
+}
+
+section {
+  background-color: white;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushrooms</title>
+    <link rel="stylesheet" href="css/black.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mushroom - the game</h1>
+    </header>
+   
+    <nav>
+        <div>
+            <a href="index.php">
+                <h4>Home</h4>
+            </a>
+        </div>
+        <div>
+            <a href="game.php">
+                <h4>Game</h4>
+            </a>
+        </div>
+        <div>
+            <a href="contact.html">
+                <h4>Contact</h4>
+            </a>
+        </div>
+        <div>
+            <a href="login_page.php">
+                <h4>Log in</h4>
+            </a>
+        </div>
+    </nav>
+    <main>
+        
+    </main>
+    <footer>do not copy!</footer>
+</body>
+
+</html>

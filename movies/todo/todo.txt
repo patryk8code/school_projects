@@ -1,0 +1,41 @@
+comments, likes, czat?
+
+form:
+add link to movie (imbd or filmweb pr smth)
+add PRIVATE FOLLOWERS PUBLIC THING!
+reuired
+pattern="[a-z]+"
+check data JS?
+in title at least first letter BIG!!!
+
+filter by :
+addisional options for logged users
+
+
+_POST insted _GET to make save article
+
+articles 
+ id             | int(11)     | NO   | PRI | NULL    | auto_increment |
+| id_user        | int(11)     | NO   |     | NULL    |                |
+| privileges     | int(11)     | YES  |     | NULL    |                |
+| title          | varchar(64) | NO   |     | NULL    |                |
+| rate           | int(11)     | YES  |     | NULL    |                |
+| genere         | varchar(32) | NO   |     | NULL    |                |
+| date_add       | datetime    | NO   |     | NULL    |                |
+| date_last_edit | datetime    | NO   |     | NULL    |                |
+| likes          | int(11)     | YES  |     | NULL    |                |
+| comments       | int(11)     | NO   |     | NULL    |                |
+| length         | int(11)     | NO   |     | NULL    |                |
+| content
+
+users
+ id              | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name            | varchar(30) | NO   |     | NULL    |                |
+| surrname        | varchar(30) | NO   |     | NULL    |                |
+| mail            | varchar(50) | YES  |     | NULL    |                |
+| nick            | varchar(30) | YES  |     | NULL    |                |
+| age             | int(11)     | NO   |     | NULL    |                |
+| date_join       | datetime    | NO   |     | NULL    |                |
+| date_last_visit | datetime    | YES  |     | NULL    |                |
+| privileges_lvl  | int(11)     | YES  |     | 0       |                |
++

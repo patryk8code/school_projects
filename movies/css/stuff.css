@@ -1,0 +1,96 @@
+:root {
+  --main-color: tomato;
+  --input-color: green;
+}
+div.form_div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  position: relative;
+  display: inline-block;
+  margin: 5px 0px;
+}
+
+.write_in {
+  width: 250px;
+  padding: 10px 0 10px 15px;
+  color: #59FFF1;
+  background-color: var(--input-color);
+  transition: all .3s ease-in-out;
+  text-indent: 100px;
+  
+  &::-webkit-input-placeholder {
+    color: var(--input-color);
+  }
+
+  +label {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    bottom: 8px;
+    padding: 5px 15px;
+    color: #032429;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0);
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+    background: rgba(122, 184, 147, 0);
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      top: 100%;
+      left: 50%;
+      margin-left: -3px;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-top: 3px solid rgba(122, 184, 147, 0);
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+.write_in:focus,
+.write_in:active {
+  color: #8C4800;
+  text-indent: 0;
+  background: #001eff;
+  background: linear-gradient(-45deg, #f000ff, #e73c7e, #59FFF1, #74ee15);
+  background-size: 400% 400%;
+  animation: gradient 5s cubic-bezier(1, 0.5, 0.5, 1) infinite;
+
+  &::-webkit-input-placeholder {
+    color: #001eff;
+  }
+
+  +label {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, .4);
+    background: rgba(122, 184, 147, 1);
+    transform: translateY(-40px);
+
+    &:after {
+      border-top: 4px solid rgba(122, 184, 147, 1);
+    }
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
